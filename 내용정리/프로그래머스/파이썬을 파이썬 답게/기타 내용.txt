@@ -1,0 +1,28 @@
+1. 두 변수의 값 바꾸기 - swap
+    - 타 언어에서는 두 값을 서로 바꾸기 위해서는
+                    """
+                    temp = a
+                    a = b
+                    b = temp
+                    """
+    위와 같이 작성하여야 하지만, 파이썬에서는 a, b = b, a로 간단하게 변경할 수 있다.
+
+2. 이진 탐색하기(Binary search)
+    - 타 언어에서는 복잡한 알고리즘을 직접 구현해서 이진 탐색을 사용해야 하지만, 파이썬에서는
+    이미 구현되어 있는 bisect 모듈을 사용하기만 하면 된다.
+
+3. __str__
+    - class 내부에 __str__을 선언해 줌으로써 출력 format을 지정할 수 있다.
+                    """
+                    class Coord(object):
+                    def __init__ (self, x, y):
+                        self.x, self.y = x, y
+                    def __str__ (self):
+                        return '({}, {})'.format(self.x, self.y)
+
+                    point = Coord(1, 2)
+                    """
+
+4. inf
+    - 어떠한 수와 비교하더라도, 무조건 inf가 크다고 판정합니다.
+    물론 음수 기호를 붙이는 것도 가능하다.
