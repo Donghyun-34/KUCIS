@@ -1,0 +1,6 @@
+cat: 고양이
+fruit: 과일
+apple: 사과
+tample: 사원
+wallet: 지갑
+bag: 가방
